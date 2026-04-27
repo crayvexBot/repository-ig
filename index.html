@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RNG Parkour</title>
+
+<style>
+body { margin:0; overflow:hidden; background:#111; }
+canvas { display:block; }
+
+/* UI */
+#ui{
+  position:absolute;
+  top:10px;
+  left:10px;
+  color:white;
+  font-family:Arial;
+  z-index:10;
+}
+
+/* JUMP BUTTON */
+#jumpBtn{
+  position:absolute;
+  bottom:40px;
+  right:40px;
+  width:100px;
+  height:100px;
+  background:rgba(0,150,255,0.2);
+  border:2px solid #00aaff;
+  color:white;
+  font-size:16px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border-radius:50%;
+  z-index:999;
+  user-select:none;
+}
+</style>
+</head>
+
+<body>
+
+<div id="ui">
+  Coins: <span id="coins">0</span>
+</div>
+
+<div id="jumpBtn">JUMP</div>
+
+<canvas id="game"></canvas>
+
+<script src="game.js"></script>
+</body>
+</html>
